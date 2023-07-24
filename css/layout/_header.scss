@@ -1,0 +1,50 @@
+.header {
+  background: rgb(20, 94, 93);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 94, 93, 1) 0%,
+    rgba(24, 136, 140, 1) 55%,
+    rgba(34, 180, 186, 1) 100%
+  );
+
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.header__top {
+  @include displayFlex();
+  height: 30px;
+  padding-block: 20px;
+  padding-inline: 40px;
+  justify-content: end;
+  gap: 30px;
+}
+
+.menu {
+  &__list {
+    @include displayFlex(row);
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-bottom: 20px;
+  }
+  &__item:hover {
+    color: $turquoiseDark;
+    // font-weight: 700;
+  }
+}
+
+.current-page {
+  //TODO
+  font-size: larger;
+  &:hover {
+    //TODO
+    color: red;
+  }
+}
+
+.fi {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
