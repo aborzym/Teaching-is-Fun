@@ -6,18 +6,6 @@ a {
   color: inherit;
 }
 
-.left-block {
-  font-size: 24px;
-  position: relative;
-  &::after {
-    @include stripe;
-  }
-
-  &__text-content {
-    padding: 20px;
-  }
-}
-
 h2 {
   font-size: 30px;
   font-weight: 900;
