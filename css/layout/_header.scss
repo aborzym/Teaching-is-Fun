@@ -3,17 +3,17 @@
   background: linear-gradient(
     180deg,
     rgba(20, 94, 93, 1) 0%,
-    rgba(24, 136, 140, 1) 55%,
+    rgba(24, 136, 140, 1) 25%,
     rgba(34, 180, 186, 1) 100%
   );
 
-  border-top-right-radius: 60px;
-  border-top-left-radius: 60px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 .header__top {
   @include displayFlex();
   height: 30px;
-  padding-block: 20px;
+  padding-top: 15px;
   padding-inline: 40px;
   justify-content: end;
   gap: 30px;
@@ -47,4 +47,15 @@
   &:hover {
     transform: scale(1.5);
   }
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.4rem;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
 }
