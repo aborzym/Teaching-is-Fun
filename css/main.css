@@ -2,12 +2,21 @@ li {
   list-style-type: none;
 }
 
+.disc-list {
+  list-style-type: disc;
+  padding-bottom: 15px;
+}
+
 ul {
   margin: 0;
 }
 
 p {
   margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
@@ -22,6 +31,42 @@ a {
 h2 {
   font-size: 30px;
   font-weight: 900;
+}
+
+.blue {
+  color: rgb(16, 31, 206);
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.red {
+  color: red;
+}
+
+.lblue {
+  color: rgb(0, 180, 247);
+}
+
+.dgreen {
+  color: rgb(0, 185, 80);
+}
+
+.purple {
+  color: rgb(142, 24, 133);
+}
+
+.brown {
+  color: rgb(63, 22, 0);
+}
+
+.wrapper {
+  font-size: 24px;
 }
 
 body {
@@ -74,10 +119,64 @@ ul {
 }
 
 .current-page {
-  font-size: larger;
+  color: rgb(20, 94, 93);
 }
-.current-page:hover {
-  color: red;
+
+.fi {
+  transition: transform 0.2s;
+}
+.fi:hover {
+  transform: scale(1.5);
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.4rem;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: rgb(20, 94, 93);
+  background: linear-gradient(180deg, rgb(34, 180, 186) 0%, rgb(24, 136, 140) 75%, rgb(20, 94, 93) 100%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 30px;
+  padding-top: 15px;
+  padding-inline: 40px;
+  justify-content: end;
+  gap: 30px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  justify-content: space-between;
+  padding-inline: 50px;
+  padding-bottom: 20px;
+}
+.menu__item:hover {
+  color: rgb(20, 94, 93);
+}
+
+.current-page {
+  color: rgb(20, 94, 93);
 }
 
 .fi {
@@ -112,8 +211,10 @@ ul {
 }
 .home::before {
   content: "";
-  background-image: url("../../assets/images/pobrane.jpeg");
+  background-image: url("../../assets/images/home-image.png");
   background-size: cover;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 0;
@@ -160,4 +261,34 @@ ul {
   height: auto;
   border: 1px solid rgb(20, 94, 93);
   border-radius: 20px;
+}
+
+.section {
+  padding-left: 10%;
+  text-align: left;
+}
+
+.levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-left: -10%;
+  padding-inline: 25px;
+}
+.levels__element {
+  text-align: center;
+}
+
+.abonament-type {
+  padding-left: 30px;
+  font-weight: 400;
+}
+.abonament-type__element {
+  padding-top: 15px;
+  list-style-type: "-  ";
 }/*# sourceMappingURL=main.css.map */

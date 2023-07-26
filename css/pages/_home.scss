@@ -8,8 +8,10 @@
   @include displayFlex(column);
   &::before {
     content: "";
-    background-image: url("../../assets/images/pobrane.jpeg");
+    background-image: url("../../assets/images/home-image.png");
     background-size: cover;
+    background-position: 100% 40%;
+    background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;

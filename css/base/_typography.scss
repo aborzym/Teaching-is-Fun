@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .title {
   color: $green;
 }
@@ -9,4 +13,38 @@ a {
 h2 {
   font-size: 30px;
   font-weight: 900;
+}
+
+.blue {
+  color: $blue;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.red {
+  color: red;
+}
+.lblue {
+  color: $lblue;
+}
+
+.dgreen {
+  color: $dgreen;
+}
+
+.purple {
+  color: $purple;
+}
+
+.brown {
+  color: $brown;
+}
+.wrapper {
+  font-size: 24px;
 }
