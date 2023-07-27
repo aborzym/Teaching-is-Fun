@@ -210,6 +210,10 @@ ul {
   margin-left: -10%;
 }
 
+.smaller-comment {
+  padding-bottom: 15px;
+}
+
 .home {
   position: relative;
   margin: auto;
