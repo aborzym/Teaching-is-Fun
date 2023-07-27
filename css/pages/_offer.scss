@@ -6,10 +6,8 @@
 .levels {
   @include displayFlex;
   justify-content: space-between;
-  font-size: 20px;
-  font-weight: 700;
   padding-top: 15px;
-  margin-left: -10%;
+
   padding-inline: 25px;
   &__element {
     text-align: center;
