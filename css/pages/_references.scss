@@ -1,0 +1,13 @@
+/*  galeria i miniatury */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px;
+  cursor: pointer;
+}

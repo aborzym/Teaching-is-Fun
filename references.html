@@ -12,12 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/modal.js"></script>
     <title>Aleksandra Henschke - Teaching is Fun</title>
   </head>
   <body>
@@ -27,36 +29,60 @@
           <a class="flag" href="#"><span class="fi fi-pl"></span> </a
           ><a class="flag" href="#"><span class="fi fi-gb"></span></a>
         </div>
-        <p class="logo">Aleksandra Henschke - Teaching is fun</p>
+        <p class="logo">Aleksandra Henschke - Teaching is Fun</p>
 
-        <div class="menu">
+        <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="current-page" href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="menu__item">
-              <a href="./about.html">O Teaching is Fun</a>
+              <a class="menu__item" href="./about.html">O Teaching is Fun</a>
             </li>
             <li class="menu__item"><a href="./offer.html">Oferta</a></li>
             <li class="menu__item"><a href="./pricelist.html">Cennik</a></li>
             <li class="menu__item"><a href="#">Rodo</a></li>
-            <li class="menu__item">
-              <a href="./references.html">Moje referencje</a>
-            </li>
+            <li class="current-page"><a href="#">Moje referencje</a></li>
             <li class="menu__item"><a href="#">Kontakt</a></li>
           </ul>
-        </div>
+        </nav>
       </section>
     </header>
-
     <main>
-      <section class="home">
-        <h1 class="home__title">Aleksandra Henschke Teaching is Fun</h1>
+      <section class="wrapper">
+        <h2>Aleksandra Henschke - Teaching is Fun</h2>
+        <h3>Otrzymane Referencje</h3>
+        <div class="gallery">
+          <img
+            src="./assets/images/refs/thumbs/ref1-small.jpg"
+            alt="Reference 1"
+            class="thumbnail"
+            onclick="openModal('./assets/images/refs/ref1.jpg')"
+          />
+          <img
+            src="./assets/images/refs/thumbs/ref2-small.jpg"
+            alt="Reference 1"
+            class="thumbnail"
+            onclick="openModal('./assets/images/refs/ref2.jpg')"
+          />
+          <img
+            src="./assets/images/refs/thumbs/ref3-small.jpg"
+            alt="Reference 1"
+            class="thumbnail"
+            onclick="openModal('./assets/images/refs/ref3.jpg')"
+          />
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img src="" alt="Large Image" class="modal-content" id="modalImage" />
+        </div>
+
+        <div class="modal" id="modal">
+          <span class="close" id="close">&times;</span>
+          <img class="modal-content" id="modal-image" />
+        </div>
       </section>
-      <h2>
-        Możesz osiągnąć każdy cel - rozpocznij swoją podróż z językiem
-        angielskim juz dziś!
-      </h2>
     </main>
     <footer>
       <section class="footer red">Tu będą informacje kontaktowe</section>
