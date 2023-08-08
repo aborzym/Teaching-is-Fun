@@ -2,9 +2,9 @@
   background: rgb(20, 94, 93);
   background: linear-gradient(
     180deg,
-    rgba(34, 180, 186, 1) 0%,
-    rgba(24, 136, 140, 1) 75%,
-    rgba(20, 94, 93, 1) 100%
+    $gradientLight 0%,
+    $gradientMedium 75%,
+    $gradientDark 100%
   );
 
   border-bottom-right-radius: 30px;

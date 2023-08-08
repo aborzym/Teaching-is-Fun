@@ -1,22 +1,19 @@
-const modal = document.getElementById("modal");
-const modalImage = document.getElementById("modal-image");
-const closeBtn = document.getElementById("close");
-const galleryItems = document.querySelectorAll(".gallery-item");
+let currentImageIndex = 0; // Indeks aktualnie otwartego zdjęcia
 
-galleryItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    const smallImageSrc = item.querySelector("img").src;
-    modalImage.src = smallImageSrc.replace("small_", "large_");
-    modal.style.display = "block";
-  });
-});
-
-closeBtn.addEventListener("click", () => {
+function openModal(index) {
+  currentImageIndex = index;
+  const modal = document.getElementById("myModal");
+  const modalImage = document.getElementById("modalImage");
+  modalImage.src = `./assets/images/refs/ref${index}.jpg`;
   modal.style.display = "block";
-});
+}
 
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == document.getElementById("myModal")) {
+    closeModal();
   }
-});
+};

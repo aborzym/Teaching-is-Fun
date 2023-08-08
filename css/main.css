@@ -91,8 +91,7 @@ ul {
 }
 
 .header {
-  background: rgb(20, 94, 93);
-  background: linear-gradient(180deg, rgb(20, 94, 93) 0%, rgb(24, 136, 140) 25%, rgb(34, 180, 186) 100%);
+  background: linear-gradient(180deg, rgb(70, 160, 158) 0%, rgb(82, 163, 165) 25%, rgb(34, 181, 186) 100%);
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
@@ -147,7 +146,7 @@ ul {
 
 .footer {
   background: rgb(20, 94, 93);
-  background: linear-gradient(180deg, rgb(34, 180, 186) 0%, rgb(24, 136, 140) 75%, rgb(20, 94, 93) 100%);
+  background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 75%, rgb(70, 160, 158) 100%);
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   padding-top: 50px;
@@ -285,18 +284,36 @@ p {
   list-style-type: "-  ";
 }
 
-/*  galeria i miniatury */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
 }
 
-.thumbnail {
-  max-width: 400px;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 10px;
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 200%;
+  max-height: 200%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 200%;
+  max-height: 200%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
   cursor: pointer;
 }
 
