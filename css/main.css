@@ -222,7 +222,7 @@ p {
 }
 .home::before {
   content: "";
-  background-image: url("../../assets/images/home-image.png");
+  background-image: url("../assets/images/home-image.png");
   background-size: cover;
   background-position: 100% 40%;
   background-repeat: no-repeat;
