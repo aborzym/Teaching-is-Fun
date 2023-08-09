@@ -149,46 +149,45 @@ ul {
   background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 75%, rgb(70, 160, 158) 100%);
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  font-size: 12px;
 }
 
-.header__top {
+.contact,
+account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-element {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 30px;
-  padding-top: 15px;
-  padding-inline: 40px;
-  justify-content: end;
-  gap: 30px;
 }
 
-.menu__list {
+.contact-text {
+  margin-left: 10px;
+}
+
+.bank-account {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  text-transform: uppercase;
-  justify-content: space-between;
-  padding-inline: 50px;
-  padding-bottom: 20px;
-}
-.menu__item:hover {
-  color: rgb(20, 94, 93);
-}
-
-.current-page {
-  color: rgb(20, 94, 93);
-}
-
-.fi {
-  transition: transform 0.2s;
-}
-.fi:hover {
-  transform: scale(1.5);
+  flex-direction: column;
+  gap: 8px;
 }
 
 .ml-10 {
@@ -284,8 +283,19 @@ p {
   list-style-type: "-  ";
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 50px;
+}
+
 .thumbnail {
-  width: 100px;
+  width: 150px;
   height: auto;
   cursor: pointer;
 }

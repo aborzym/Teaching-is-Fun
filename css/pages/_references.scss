@@ -1,7 +1,15 @@
+.gallery {
+  @include displayFlex();
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 50px;
+}
+
 // miniatura
 
 .thumbnail {
-  width: 100px;
+  width: 150px;
   height: auto;
   cursor: pointer;
 }
