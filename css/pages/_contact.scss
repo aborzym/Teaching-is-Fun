@@ -1,0 +1,23 @@
+.account {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.form-info {
+  @include displayFlex();
+  gap: 30px;
+  margin-bottom: 30px;
+  &__field {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid $turquoiseLight;
+    border-radius: 15px;
+    width: 280px;
+  }
+}
+
+.form-textarea {
+  padding: 10px;
+  border: 1px solid $turquoiseLight;
+  border-radius: 15px;
+}
