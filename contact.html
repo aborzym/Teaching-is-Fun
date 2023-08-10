@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/formsubmit"></script>
     <title>Aleksandra Henschke - Teaching is Fun</title>
   </head>
   <body>
@@ -52,46 +53,25 @@
     </header>
     <main>
       <section class="wrapper">
-        <h2>CENNIK:</h2>
-        <div class="section">
-          <ul class="dotted-list">
-            <li class="disc-list">
-              Język angielski od podstaw / Odświeżanie gramatyki / konwersacje
-              <span class="fw700">100 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Szkoła podstawowa
-              <span class="fw700">75 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Liceum <span class="fw700">85 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Matura <span class="fw700">95 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Biznes <span class="fw700">140 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Przygotowanie do rozmów kwalifikacyjnych
-              <span class="fw700">120 PLN/H</span>
-            </li>
-            <li class="disc-list">
-              Język angielski - Coaching językowy
-              <span class="underline">w cenie</span> dla wszystkich powyższych
-              opcji
-            </li>
-            <li class="disc-list underline">
-              Zniżki dla płatności kwartalnych
-            </li>
-          </ul>
-        </div>
-        <p class="fs20 smaller-comment">
-          Jednostka rozliczeniowa = Godzina zegarowa / Dla uczniów szkoły
-          podstawowej możliwe lekcje 45-minutowe, zapytaj o cennik
-        </p>
+        <h2>Napisz do mnie</h2>
+        <form id="contact-form">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required />
 
-        <p class="fs20 smaller-comment">Metoda płatności – przelew</p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Wiadomość:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+
+          <input type="submit" value="Wyślij" />
+        </form>
       </section>
     </main>
     <footer>
