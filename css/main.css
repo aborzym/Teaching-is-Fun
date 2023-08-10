@@ -77,6 +77,16 @@ h2 {
   text-decoration: underline;
 }
 
+.btn {
+  margin-top: 20px;
+  padding: 5px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  border: solid 2px rgb(34, 180, 186);
+  border-radius: 10px;
+}
+
 body {
   padding-inline: 100px;
   max-width: 1800px;

@@ -54,11 +54,15 @@
     <main>
       <section class="wrapper">
         <h2>Wyślij do mnie wiadomość</h2>
-        <form action="https://formsubmit.co/borzym.a@gmail.com" method="POST">
+        <form
+          action="https://formsubmit.co/borzym.a@gmail.com"
+          method="POST"
+          class="form"
+        >
           <input
             type="text"
             name="name"
-            class="form-field"
+            class="form__field"
             placeholder="Twoje imię"
             required
           />
@@ -66,14 +70,20 @@
           <input
             type="email"
             name="email"
-            class="form-field"
+            class="form__field"
             placeholder="Twój email"
             required
           />
 
-          <textarea name="message" rows="10" cols="50" required></textarea>
+          <textarea
+            class="form__textarea"
+            name="message"
+            rows="10"
+            cols="50"
+            placeholder="Twoja wiadomość"
+          ></textarea>
 
-          <input type="submit" value="Wyślij" />
+          <button type="submit" class="btn">Wyślij</button>
         </form>
       </section>
     </main>
