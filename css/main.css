@@ -142,7 +142,7 @@ ul {
 }
 
 .current-page {
-  color: rgb(20, 94, 93);
+  border-bottom: 4px solid rgb(20, 94, 93);
 }
 
 .fi {
@@ -295,7 +295,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 15px;
-  padding-inline: 25px;
+  padding-inline: 20px;
 }
 .levels__element {
   text-align: center;
