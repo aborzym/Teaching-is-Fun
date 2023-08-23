@@ -1,16 +1,14 @@
 .text-block {
   font-size: 18px;
-  // position: relative;
-  // &::after {
-  //   @include stripe;
-  // }
   padding: 20px;
   text-align: justify;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .profile_photo {
+  float: right;
+  margin-left: 10px;
   max-width: 300px;
   height: auto;
   border: 1px solid $turquoiseDark;
