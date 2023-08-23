@@ -29,13 +29,13 @@ a {
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 900;
-  padding-block: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  padding-block: 25px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0.8em;
 }
 
@@ -53,6 +53,10 @@ h4 {
 
 .fs20 {
   font-size: 20px;
+}
+
+.fs18 {
+  font-size: 18px;
 }
 
 .red {
@@ -95,10 +99,11 @@ h4 {
 }
 
 body {
-  padding-inline: 100px;
-  max-width: 1800px;
+  padding-inline: 30px;
+  max-width: 1200px;
   margin: auto;
-  margin-block: 30px;
+  margin-top: 30px;
+  margin-bottom: 300px;
   text-align: center;
   background-color: rgb(245, 237, 228);
 }
@@ -135,7 +140,7 @@ ul {
   padding-inline: 50px;
   padding-bottom: 20px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 .menu__item:hover {
   color: rgb(20, 94, 93);
@@ -153,23 +158,25 @@ ul {
 }
 
 .logo {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 15px;
   text-align: center;
   color: white;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   text-transform: none;
 }
 
 .footer {
-  background: rgb(20, 94, 93);
+  max-width: 1200px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
   background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 75%, rgb(70, 160, 158) 100%);
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
   font-size: 12px;
 }
 
@@ -187,7 +194,7 @@ account {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contact-element {
@@ -223,6 +230,10 @@ account {
   background-color: white;
 }
 
+.wrapper {
+  padding-bottom: 30px;
+}
+
 p {
   margin-bottom: 10px;
 }
@@ -231,13 +242,17 @@ p {
   padding-top: 30px;
 }
 
+.dotted-list {
+  padding-bottom: 30px;
+}
+
 .home {
   position: relative;
   margin: auto;
   margin-top: 4px;
   text-align: center;
   max-width: 100%;
-  height: 400px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,17 +260,15 @@ p {
 }
 .home::before {
   content: "";
-  background-image: url("../assets/images/pobrane.jpeg");
+  background-image: url("../assets/images/home-image.png");
   background-size: cover;
-  background-position: 100% 20%;
+  background-position: 100% 40%;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
   opacity: 0.5;
 }
 .home__title {
@@ -269,7 +282,7 @@ p {
 }
 
 .text-block {
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px;
   text-align: justify;
   margin-left: 15%;
@@ -277,7 +290,7 @@ p {
 }
 
 .profile_photo {
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border: 1px solid rgb(20, 94, 93);
   border-radius: 20px;
@@ -286,6 +299,7 @@ p {
 .section {
   padding-left: 10%;
   text-align: left;
+  font-size: 18px;
 }
 
 .levels {

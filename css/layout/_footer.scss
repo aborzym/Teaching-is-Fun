@@ -1,5 +1,9 @@
 .footer {
-  background: rgb(20, 94, 93);
+  max-width: 1200px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
   background: linear-gradient(
     180deg,
     $gradientLight 0%,
@@ -8,8 +12,6 @@
   );
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding-top: 20px;
-  padding-bottom: 30px;
   font-size: 12px;
 }
 
@@ -20,7 +22,7 @@ account {
 }
 .contact-list {
   @include displayFlex(column);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contact-element {

@@ -1,5 +1,5 @@
 .text-block {
-  font-size: 24px;
+  font-size: 18px;
   // position: relative;
   // &::after {
   //   @include stripe;
@@ -11,7 +11,7 @@
 }
 
 .profile_photo {
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border: 1px solid $turquoiseDark;
   border-radius: 20px;
