@@ -285,8 +285,12 @@ p {
   font-size: 18px;
   padding: 20px;
   text-align: justify;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.text-block p {
+  margin-bottom: 0;
 }
 
 .profile_photo {
