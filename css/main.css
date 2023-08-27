@@ -207,7 +207,7 @@ account {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact-element {
@@ -221,13 +221,17 @@ account {
   margin-left: 10px;
 }
 
-.bank-account {
+.rodo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 18px;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+.rodo__cert {
+  height: 20px;
 }
 
 .ml-10 {
@@ -328,7 +332,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 15px;
-  padding-inline: 20px;
+  padding-inline: 50px;
 }
 .levels__element {
   text-align: center;
@@ -419,11 +423,6 @@ p {
   cursor: pointer;
 }
 
-.account {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
 .form-info {
   display: flex;
   justify-content: center;
@@ -444,4 +443,27 @@ p {
   padding: 10px;
   border: 1px solid rgb(34, 180, 186);
   border-radius: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+.rodo-info {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.account {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bank-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

@@ -21,7 +21,7 @@ account {
 }
 .contact-list {
   @include displayFlex(column);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact-element {
@@ -32,8 +32,12 @@ account {
   margin-left: 10px;
 }
 
-.bank-account {
-  @include displayFlex(column);
-  gap: 8px;
-  font-size: 18px;
+.rodo {
+  @include displayFlex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  &__cert {
+    height: 20px;
+  }
 }

@@ -25,83 +25,87 @@
     <header>
       <section class="header">
         <div class="header__top">
-          <a class="flag" href="./contact.html"
-            ><span class="fi fi-pl"></span> </a
-          ><a class="flag" href="#"><span class="fi fi-gb"></span></a>
+          <a class="flag" href="#"><span class="fi fi-pl"></span> </a
+          ><a class="flag" href="./contact_en.html"
+            ><span class="fi fi-gb"></span
+          ></a>
         </div>
         <p class="logo">Aleksandra Henschke - Teaching is Fun</p>
 
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="./index_en.html">Main</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="menu__item">
-              <a class="menu__item" href="./about_en.html">About me</a>
+              <a class="menu__item" href="./about.html">O Teaching is Fun</a>
             </li>
-            <li class="menu__item"><a href="./offer_en.html">Offer</a></li>
+            <li class="menu__item"><a href="./offer.html">Oferta</a></li>
+            <li class="menu__item"><a href="./pricelist.html">Cennik</a></li>
             <li class="menu__item">
-              <a href="./pricelist_en.html">Pricing</a>
+              <a href="./references.html">Moje referencje</a>
             </li>
-            <li class="menu__item">
-              <a href="./references_en.html">Recommendations</a>
-            </li>
-            <li class="current-page"><a href="#">Contact</a></li>
+            <li class="current-page"><a href="#">Kontakt</a></li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
       <section class="wrapper">
-        <h2>Send me a message</h2>
+        <h2>Wyślij do mnie wiadomość</h2>
         <form
-          action="https://formsubmit.co/borzym.a@gmail.com"
-          method="POST"
+          action="form/send.php"
+          method="post"
           class="form"
+          id="contactform"
         >
           <div class="form-info">
-            <input
-              type="text"
-              name="name"
-              class="form-info__field"
-              placeholder="Your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              class="form-info__field"
-              placeholder="Your email"
-              required
-            />
+            <fieldset>
+              <input
+                type="text"
+                name="contact-name"
+                class="form-info__field"
+                placeholder="Imię i nazwisko"
+                required
+                tabindex="1"
+              />
+              <input
+                type="email"
+                name="contact-email"
+                class="form-info__field"
+                placeholder="Twój email"
+                required
+                tabindex="2"
+              />
+
+              <textarea
+                class="form-textarea"
+                name="contact-body"
+                rows="10"
+                cols="50"
+                placeholder="Twoja wiadomość"
+                required
+                tabindex="3"
+              ></textarea>
+
+              <button type="submit" class="btn">Wyślij</button>
+            </fieldset>
           </div>
-
-          <textarea
-            class="form-textarea"
-            name="message"
-            rows="10"
-            cols="50"
-            placeholder="Your message"
-          ></textarea>
-
-          <button type="submit" class="btn">Send</button>
         </form>
         <div class="rodo-info">
           <a
-            href="https://app.gorodo.pl/api/klauzula_informacyjna_formularz_www_en/1181569507/teaching-is-fun.pl"
+            href="https://app.gorodo.pl/api/klauzula_informacyjna_formularz_www/1181569507/teaching-is-fun.pl"
             target="_blank"
-          >
-            Information clause</a
+            >Klauzula informacyjna</a
           >
         </div>
 
         <div class="account">
-          <h4>Bank Details</h4>
+          <h4>Dane do przelewu:</h4>
           <ul class="bank-account">
             <li class="fw700">Aleksandra Henschke - Teaching is Fun</li>
-            <li>MBANK ACCOUNT NUMBER 52 1140 2004 0000 3402 8130 0589</li>
-            <li>IBAN PL 52 1140 2004 0000 3402 8130 0589</li>
-            <li>SWIFT BREXPLPWMBK</li>
+            <li>MBANK - Konto firmowe</li>
+            <li>52 1140 2004 0000 3402 8130 0589</li>
           </ul>
         </div>
       </section>
@@ -142,9 +146,9 @@
           </ul>
           <div class="rodo">
             <a
-              href="https://app.gorodo.pl/api/polityka_prywatnosci_en/1181569507/teaching-is-fun.pl"
+              href="https://app.gorodo.pl/api/polityka_prywatnosci/1181569507/teaching-is-fun.pl"
               target="_blank"
-              >Privacy policy</a
+              >Polityka Prywatności</a
             >
 
             <div class="rodo__cert">
@@ -161,7 +165,7 @@
             <a
               href="https://app.gorodo.pl/api/zadanie/1181569507"
               target="_blank"
-              >GDPR request</a
+              >Żądanie RODO</a
             >
           </div>
         </div>

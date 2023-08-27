@@ -1,8 +1,3 @@
-.account {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
 .form-info {
   @include displayFlex();
   gap: 30px;
@@ -20,4 +15,24 @@
   padding: 10px;
   border: 1px solid $turquoiseLight;
   border-radius: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+.rodo-info {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.account {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bank-account {
+  @include displayFlex(column);
+  gap: 8px;
+  font-size: 16px;
 }
