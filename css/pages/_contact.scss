@@ -17,8 +17,16 @@
   border-radius: 15px;
 }
 
-fieldset {
-  border: none;
+.msg-status {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  font-size: 24px;
 }
 
 .rodo-info {
@@ -26,6 +34,14 @@ fieldset {
   padding-top: 20px;
 }
 
+.success {
+  display: flex;
+  background-color: greenyellow;
+}
+.error {
+  display: flex;
+  background-color: red;
+}
 .account {
   margin-top: 20px;
   margin-bottom: 20px;

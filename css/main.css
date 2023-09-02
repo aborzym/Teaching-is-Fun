@@ -16,6 +16,7 @@ p {
 }
 
 body {
+  font-family: "Handlee", cursive;
   font-family: "Roboto", sans-serif;
 }
 
@@ -35,10 +36,16 @@ h2 {
 }
 
 h4 {
-  font-size: 18px;
-  margin: 0.8em;
+  font-size: 14px;
+  margin: 0.3em;
 }
 
+@media (min-width: 481px) {
+  h4 {
+    font-size: 18px;
+    margin: 0.8em;
+  }
+}
 .blue {
   color: rgb(16, 31, 206);
 }
@@ -87,6 +94,10 @@ h4 {
   text-decoration: underline;
 }
 
+.hand {
+  font-family: "Handlee", cursive;
+}
+
 .btn {
   margin-top: 20px;
   padding: 5px;
@@ -99,10 +110,7 @@ h4 {
 }
 
 body {
-  padding-inline: 30px;
-  max-width: 1200px;
   margin: auto;
-  margin-top: 30px;
   margin-bottom: 300px;
   text-align: center;
   background-color: rgb(245, 237, 228);
@@ -111,6 +119,19 @@ body {
   min-height: 100vh;
 }
 
+@media (min-width: 481px) {
+  body {
+    margin-top: 5px;
+    padding-inline: 5px;
+    max-width: 769px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    max-width: 1280px;
+    margin-top: 10px;
+  }
+}
 html,
 body {
   height: 100%;
@@ -128,10 +149,14 @@ main {
 
 .header {
   background: linear-gradient(180deg, rgb(70, 160, 158) 0%, rgb(82, 163, 165) 25%, rgb(34, 181, 186) 100%);
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
 }
 
+@media (min-width: 481px) {
+  .header {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+}
 .header__top {
   display: flex;
   justify-content: center;
@@ -144,6 +169,9 @@ main {
   gap: 30px;
 }
 
+.menu {
+  display: none;
+}
 .menu__list {
   display: flex;
   justify-content: center;
@@ -160,6 +188,11 @@ main {
   color: rgb(20, 94, 93);
 }
 
+@media (min-width: 769px) {
+  .menu {
+    display: block;
+  }
+}
 .current-page {
   border-bottom: 4px solid rgb(20, 94, 93);
 }
@@ -172,27 +205,133 @@ main {
 }
 
 .logo {
-  padding-top: 5px;
-  padding-bottom: 15px;
+  color: rgb(224, 255, 254);
   text-align: center;
-  color: white;
-  letter-spacing: 0.3rem;
-  font-weight: 900;
-  font-size: 24px;
-  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 481px) {
+  .logo {
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  .logo {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    font-size: 24px;
+  }
+}
+.menu-open-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 50vh;
+  padding: 32px;
+  border: solid 1px black;
+  background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 25%, rgb(5, 135, 133) 100%);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu__item {
+  color: rgb(224, 255, 254);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.mobile-menu__item:hover, .mobile-menu__item:focus {
+  color: rgb(10, 42, 41);
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer {
   margin-top: auto;
-  margin-bottom: 40px;
   padding: 10px;
   text-align: center;
   background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 75%, rgb(70, 160, 158) 100%);
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
+@media (min-width: 481px) {
+  .footer {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 769px) {
+  .footer {
+    margin-bottom: 40px;
+  }
+}
 .contact,
 account {
   display: flex;
@@ -207,9 +346,14 @@ account {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 12px;
 }
 
+@media (min-width: 481px) {
+  .contact-list {
+    font-size: 16px;
+  }
+}
 .contact-element {
   display: flex;
   justify-content: center;
@@ -221,6 +365,15 @@ account {
   margin-left: 10px;
 }
 
+.contact-icon {
+  width: 14px;
+}
+
+@media (min-width: 481px) {
+  .contact-icon {
+    width: 20px;
+  }
+}
 .rodo {
   display: flex;
   justify-content: center;
@@ -274,12 +427,13 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .home::before {
   content: "";
   background-image: url("../assets/images/home-image.png");
   background-size: cover;
-  background-position: 100% 40%;
+  background-position: 50% 50%, center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -290,12 +444,35 @@ p {
 }
 .home__title {
   position: relative;
-  color: rgb(24, 136, 140);
-  text-transform: uppercase;
-  font-size: 3em;
-  width: 700px;
+  color: rgb(20, 94, 93);
+  font-size: 14px;
   line-height: 1.5;
-  margin: auto;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+@media (min-width: 481px) {
+  .home::before {
+    content: "";
+    background-position: 100% 40%;
+  }
+  .home__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 769px) {
+  .home::before {
+    content: "";
+    background-position: 100% 40%;
+  }
+  .home__title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+.main-home {
+  background-color: rgb(245, 247, 248);
 }
 
 .text-block {
@@ -445,13 +622,31 @@ p {
   border-radius: 15px;
 }
 
-fieldset {
-  border: none;
+.msg-status {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  font-size: 24px;
 }
 
 .rodo-info {
   font-size: 14px;
   padding-top: 20px;
+}
+
+.success {
+  display: flex;
+  background-color: greenyellow;
+}
+
+.error {
+  display: flex;
+  background-color: red;
 }
 
 .account {

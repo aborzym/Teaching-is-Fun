@@ -1,6 +1,5 @@
 .footer {
   margin-top: auto;
-  margin-bottom: 40px;
   padding: 10px;
   text-align: center;
   background: linear-gradient(
@@ -9,11 +8,23 @@
     $gradientMedium 75%,
     $gradientDark 100%
   );
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
+@media (min-width: $tablet) {
+  .footer {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    margin-bottom: 40px;
+  }
+}
 .contact,
 account {
   @include displayFlex(column);
@@ -21,7 +32,13 @@ account {
 }
 .contact-list {
   @include displayFlex(column);
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media (min-width: $tablet) {
+  .contact-list {
+    font-size: 16px;
+  }
 }
 
 .contact-element {
@@ -30,6 +47,15 @@ account {
 
 .contact-text {
   margin-left: 10px;
+}
+
+.contact-icon {
+  width: 14px;
+}
+@media (min-width: $tablet) {
+  .contact-icon {
+    width: 20px;
+  }
 }
 
 .rodo {

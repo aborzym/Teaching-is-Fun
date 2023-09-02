@@ -5,9 +5,12 @@
     $gradientMedium 25%,
     $gradientLight 100%
   );
-
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+}
+@media (min-width: $tablet) {
+  .header {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
 }
 .header__top {
   @include displayFlex();
@@ -19,6 +22,7 @@
 }
 
 .menu {
+  display: none;
   &__list {
     @include displayFlex(row);
     text-transform: uppercase;
@@ -34,6 +38,12 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .menu {
+    display: block;
+  }
+}
+
 .current-page {
   border-bottom: 4px solid $turquoiseDark;
 }
@@ -46,12 +56,30 @@
 }
 
 .logo {
-  padding-top: 5px;
-  padding-bottom: 15px;
+  color: $whiteBlue;
   text-align: center;
-  color: white;
-  letter-spacing: 0.3rem;
-  font-weight: 900;
-  font-size: 24px;
-  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    font-size: 24px;
+  }
 }

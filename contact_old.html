@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/formsubmit"></script>
@@ -54,43 +54,36 @@
       <section class="wrapper">
         <h2>Wyślij do mnie wiadomość</h2>
         <form
-          action="form/send.php"
-          method="post"
+          action="https://formsubmit.co/borzym.a@gmail.com"
+          method="POST"
           class="form"
-          id="contactform"
         >
           <div class="form-info">
-            <fieldset>
-              <input
-                type="text"
-                name="contact-name"
-                class="form-info__field"
-                placeholder="Imię i nazwisko"
-                required
-                tabindex="1"
-              />
-              <input
-                type="email"
-                name="contact-email"
-                class="form-info__field"
-                placeholder="Twój email"
-                required
-                tabindex="2"
-              />
-
-              <textarea
-                class="form-textarea"
-                name="contact-body"
-                rows="10"
-                cols="50"
-                placeholder="Twoja wiadomość"
-                required
-                tabindex="3"
-              ></textarea>
-
-              <button type="submit" class="btn">Wyślij</button>
-            </fieldset>
+            <input
+              type="text"
+              name="name"
+              class="form-info__field"
+              placeholder="Imię i nazwisko"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-info__field"
+              placeholder="Twój email"
+              required
+            />
           </div>
+
+          <textarea
+            class="form-textarea"
+            name="message"
+            rows="10"
+            cols="50"
+            placeholder="Twoja wiadomość"
+          ></textarea>
+
+          <button type="submit" class="btn">Wyślij</button>
         </form>
         <div class="rodo-info">
           <a
@@ -99,7 +92,6 @@
             >Klauzula informacyjna</a
           >
         </div>
-
         <div class="account">
           <h4>Dane do przelewu:</h4>
           <ul class="bank-account">

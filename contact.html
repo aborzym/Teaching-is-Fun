@@ -15,10 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/formsubmit"></script>
+    <script defer src="./js/mail.js"></script>
     <title>Aleksandra Henschke - Teaching is Fun</title>
   </head>
   <body>
@@ -53,11 +53,7 @@
     <main>
       <section class="wrapper">
         <h2>Wyślij do mnie wiadomość</h2>
-        <form
-          action="https://formsubmit.co/borzym.a@gmail.com"
-          method="POST"
-          class="form"
-        >
+        <form action="mail.php" method="POST" class="form">
           <div class="form-info">
             <input
               type="text"
@@ -77,14 +73,17 @@
 
           <textarea
             class="form-textarea"
-            name="message"
+            name="msg"
             rows="10"
             cols="50"
             placeholder="Twoja wiadomość"
+            required
           ></textarea>
 
-          <button type="submit" class="btn">Wyślij</button>
+          <button class="btn">Wyślij</button>
         </form>
+
+        <p class="msg-status"></p>
         <div class="rodo-info">
           <a
             href="https://app.gorodo.pl/api/klauzula_informacyjna_formularz_www/1181569507/teaching-is-fun.pl"

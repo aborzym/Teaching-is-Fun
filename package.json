@@ -2,5 +2,8 @@
   "dependencies": {
     "flag-icons": "^6.7.0",
     "simplelightbox": "^2.14.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3"
   }
 }

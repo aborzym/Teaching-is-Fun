@@ -1,14 +1,27 @@
 body {
-  padding-inline: 30px;
-  max-width: 1200px;
+  // padding-inline: 30px;
   margin: auto;
-  margin-top: 30px;
   margin-bottom: 300px;
   text-align: center;
   background-color: rgb(245, 237, 228);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+@media (min-width: $tablet) {
+  body {
+    margin-top: 5px;
+
+    padding-inline: 5px;
+    max-width: $desktop;
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    max-width: 1280px;
+    margin-top: 10px;
+  }
 }
 
 html,
