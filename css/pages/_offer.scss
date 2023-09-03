@@ -1,14 +1,14 @@
-.section {
+.offer-list {
   padding-left: 10%;
   text-align: left;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .levels {
-  @include displayFlex;
-  justify-content: space-between;
+  @include displayFlex(column);
   padding-top: 15px;
-
+  font-size: 14px;
+  gap: 15px;
   padding-inline: 50px;
   &__element {
     text-align: center;
@@ -22,5 +22,28 @@
   &__element {
     padding-top: 15px;
     list-style-type: "-  ";
+  }
+}
+
+@media (min-width: $tablet) {
+  .offer-list {
+    font-size: 16px;
+  }
+
+  .levels {
+    font-size: 16px;
+  }
+}
+@media (min-width: $desktop) {
+  .offer-list {
+    font-size: 18px;
+  }
+
+  .levels {
+    @include displayFlex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-inline: 15%;
+    font-size: 18px;
   }
 }

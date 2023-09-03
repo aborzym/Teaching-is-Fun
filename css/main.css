@@ -589,19 +589,20 @@ p {
     text-align: center;
   }
 }
-.section {
+.offer-list {
   padding-left: 10%;
   text-align: left;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .levels {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 15px;
+  font-size: 14px;
+  gap: 15px;
   padding-inline: 50px;
 }
 .levels__element {
@@ -617,6 +618,29 @@ p {
   list-style-type: "-  ";
 }
 
+@media (min-width: 481px) {
+  .offer-list {
+    font-size: 16px;
+  }
+  .levels {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) {
+  .offer-list {
+    font-size: 18px;
+  }
+  .levels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-inline: 15%;
+    font-size: 18px;
+  }
+}
 .gallery {
   display: flex;
   justify-content: center;
