@@ -18,17 +18,16 @@
       href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./js/mail.js"></script>
+    <script src="https://unpkg.com/formsubmit"></script>
     <title>Aleksandra Henschke - Teaching is Fun</title>
   </head>
   <body>
     <header>
       <section class="header">
         <div class="header__top">
-          <a class="flag" href="#"><span class="fi fi-pl"></span> </a
-          ><a class="flag" href="./contact_en.html"
-            ><span class="fi fi-gb"></span
-          ></a>
+          <a class="flag" href="./contact.html"
+            ><span class="fi fi-pl"></span> </a
+          ><a class="flag" href="#"><span class="fi fi-gb"></span></a>
         </div>
         <h1 class="logo">Aleksandra Henschke - Teaching is Fun</h1>
         <div class="menu-open-container">
@@ -56,17 +55,19 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="./index.html">Home</a>
+              <a href="./index_en.html">Main</a>
             </li>
             <li class="menu__item">
-              <a class="menu__item" href="./about.html">O Teaching is Fun</a>
+              <a class="menu__item" href="./about_en.html">About me</a>
             </li>
-            <li class="menu__item"><a href="./offer.html">Oferta</a></li>
-            <li class="menu__item"><a href="./pricelist.html">Cennik</a></li>
+            <li class="menu__item"><a href="./offer_en.html">Offer</a></li>
             <li class="menu__item">
-              <a href="./references.html">Moje referencje</a>
+              <a href="./pricelist_en.html">Pricing</a>
             </li>
-            <li class="current-page"><a href="#">Kontakt</a></li>
+            <li class="menu__item">
+              <a href="./references_en.html">Recommendations</a>
+            </li>
+            <li class="current-page"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </section>
@@ -74,7 +75,11 @@
     <main>
       <section class="wrapper">
         <h2>Send me a message</h2>
-        <form action="mail.php" method="POST" class="form">
+        <form
+          action="https://formsubmit.co/borzym.a@gmail.com"
+          method="POST"
+          class="form"
+        >
           <div class="form-info">
             <input
               type="text"
@@ -94,31 +99,30 @@
 
           <textarea
             class="form-textarea"
-            name="msg"
+            name="message"
             rows="10"
             cols="50"
             placeholder="Your message"
-            required
           ></textarea>
 
-          <button class="btn">Send</button>
+          <button type="submit" class="btn">Send</button>
         </form>
-
-        <p class="msg-status"></p>
         <div class="rodo-info">
           <a
-            href="https://app.gorodo.pl/api/klauzula_informacyjna_formularz_www/1181569507/teaching-is-fun.pl"
+            href="https://app.gorodo.pl/api/klauzula_informacyjna_formularz_www_en/1181569507/teaching-is-fun.pl"
             target="_blank"
-            >Information clause</a
+          >
+            Information clause</a
           >
         </div>
+
         <div class="account">
-          <h4>Bank Details:</h4>
+          <h4>Bank Details</h4>
           <ul class="bank-account">
             <li class="fw700">Aleksandra Henschke - Teaching is Fun</li>
             <li>MBANK ACCOUNT NUMBER 52 1140 2004 0000 3402 8130 0589</li>
             <li>IBAN PL 52 1140 2004 0000 3402 8130 0589</li>
-            <li>SWIFT: BREXPLPWMBK</li>
+            <li>SWIFT BREXPLPWMBK</li>
           </ul>
         </div>
       </section>
@@ -159,7 +163,7 @@
           </ul>
           <div class="rodo">
             <a
-              href="https://app.gorodo.pl/api/polityka_prywatnosci/1181569507/teaching-is-fun.pl"
+              href="https://app.gorodo.pl/api/polityka_prywatnosci_en/1181569507/teaching-is-fun.pl"
               target="_blank"
               >Privacy policy</a
             >
@@ -203,17 +207,21 @@
 
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
-          <a href="./index.html">Home</a>
+          <a href="./index_en.html">Main</a>
         </li>
         <li class="mobile-menu__item">
-          <a href="./about.html">O Teaching is Fun</a>
+          <a href="./about_en.html">About me</a>
         </li>
-        <li class="mobile-menu__item"><a href="./offer.html">Oferta</a></li>
-        <li class="mobile-menu__item"><a href="./pricelist.html">Cennik</a></li>
+        <li class="mobile-menu__item"><a href="./offer_en.html">Offer</a></li>
         <li class="mobile-menu__item">
-          <a href="./references.html">Moje referencje</a>
+          <a href="./pricelist_en.html">Pricing</a>
         </li>
-        <li class="mobile-menu__item"><a href="./contact.html">Kontakt</a></li>
+        <li class="mobile-menu__item">
+          <a href="./references_en.html">Recommendations</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./contact_en.html">Contact</a>
+        </li>
       </ul>
     </div>
     <script
