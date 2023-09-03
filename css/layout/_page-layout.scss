@@ -1,3 +1,38 @@
+@media (min-width: $tablet) {
+  .ml-10 {
+    margin-left: -10%;
+  }
+
+  .smaller-comment {
+    padding-bottom: 15px;
+  }
+  .container {
+    margin: auto;
+    background-color: white;
+  }
+
+  .wrapper {
+    padding-bottom: 30px;
+  }
+
+  .wrapper-no-title {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .section {
+    padding-top: 30px;
+  }
+
+  .dotted-list {
+    padding-bottom: 30px;
+  }
+}
+
 .ml-10 {
   margin-left: -10%;
 }
