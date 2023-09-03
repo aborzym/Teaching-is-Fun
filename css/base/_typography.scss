@@ -12,7 +12,7 @@ a {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -64,12 +64,11 @@ h4 {
 
 @media (min-width: $tablet) {
   h2 {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 18px;
     padding-block: 25px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0.8em;
   }
   .title {
@@ -78,6 +77,14 @@ h4 {
 }
 
 @media (min-width: $desktop) {
+  h2 {
+    font-size: 20px;
+    padding-block: 25px;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0.8em;
+  }
   .title {
     font-size: 20px;
   }

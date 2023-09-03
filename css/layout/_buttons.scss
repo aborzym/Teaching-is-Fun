@@ -6,5 +6,18 @@
   margin: auto;
   border: solid 2px $turquoiseLight;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media (min-width: $tablet) {
+  .btn {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: $desktop) {
+  .btn {
+    font-size: 16px;
+  }
 }

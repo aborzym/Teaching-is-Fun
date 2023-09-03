@@ -1,13 +1,14 @@
 .form-info {
-  @include displayFlex();
-  gap: 30px;
-  margin-bottom: 30px;
+  @include displayFlex(column);
+  gap: 10px;
+  margin-bottom: 10px;
   &__field {
     padding: 10px;
     text-align: center;
     border: 1px solid $turquoiseLight;
     border-radius: 15px;
-    width: 280px;
+    width: 150px;
+    font-size: 70%;
   }
 }
 
@@ -15,6 +16,8 @@
   padding: 10px;
   border: 1px solid $turquoiseLight;
   border-radius: 15px;
+  width: 250px;
+  font-size: 70%;
 }
 
 .msg-status {
@@ -30,7 +33,7 @@
 }
 
 .rodo-info {
-  font-size: 14px;
+  font-size: 10px;
   padding-top: 20px;
 }
 
@@ -50,5 +53,124 @@
 .bank-account {
   @include displayFlex(column);
   gap: 8px;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media (min-width: $tablet) {
+  .form-info {
+    @include displayFlex();
+    gap: 15px;
+    margin-bottom: 30px;
+    &__field {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $turquoiseLight;
+      border-radius: 15px;
+      width: 180px;
+      font-size: 85%;
+    }
+  }
+
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid $turquoiseLight;
+    border-radius: 15px;
+    width: 400px;
+    font-size: 85%;
+  }
+
+  .msg-status {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 24px;
+  }
+
+  .rodo-info {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+
+  .success {
+    display: flex;
+    background-color: greenyellow;
+  }
+  .error {
+    display: flex;
+    background-color: red;
+  }
+  .account {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bank-account {
+    @include displayFlex(column);
+    gap: 8px;
+    font-size: 14px;
+  }
+}
+@media (min-width: $desktop) {
+  .form-info {
+    @include displayFlex();
+    gap: 30px;
+    margin-bottom: 30px;
+    &__field {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $turquoiseLight;
+      border-radius: 15px;
+      width: 200px;
+      font-size: 100%;
+    }
+  }
+
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid $turquoiseLight;
+    border-radius: 15px;
+    width: 460px;
+    font-size: 100%;
+  }
+
+  .msg-status {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 24px;
+  }
+
+  .rodo-info {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .success {
+    display: flex;
+    background-color: greenyellow;
+  }
+  .error {
+    display: flex;
+    background-color: red;
+  }
+  .account {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bank-account {
+    @include displayFlex(column);
+    gap: 8px;
+    font-size: 16px;
+  }
 }

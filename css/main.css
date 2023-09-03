@@ -30,7 +30,7 @@ a {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -81,12 +81,11 @@ h4 {
 
 @media (min-width: 481px) {
   h2 {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 18px;
     padding-block: 25px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0.8em;
   }
   .title {
@@ -94,6 +93,14 @@ h4 {
   }
 }
 @media (min-width: 769px) {
+  h2 {
+    font-size: 20px;
+    padding-block: 25px;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0.8em;
+  }
   .title {
     font-size: 20px;
   }
@@ -106,9 +113,21 @@ h4 {
   margin: auto;
   border: solid 2px rgb(34, 180, 186);
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 12px;
 }
 
+@media (min-width: 481px) {
+  .btn {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .btn {
+    font-size: 16px;
+  }
+}
 body {
   margin: auto;
   margin-bottom: 300px;
@@ -665,11 +684,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
   justify-content: center;
-  padding-inline: 50px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -682,9 +699,21 @@ p {
   transform: scale(1.1);
 }
 
+@media (min-width: 481px) {
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+}
 .modal {
   display: none;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   max-width: 200%;
@@ -697,16 +726,6 @@ p {
   margin: auto;
   max-width: 200%;
   max-height: 200%;
-}
-
-.close {
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .modal {
@@ -741,22 +760,25 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  gap: 30px;
-  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .form-info__field {
   padding: 10px;
   text-align: center;
   border: 1px solid rgb(34, 180, 186);
   border-radius: 15px;
-  width: 280px;
+  width: 150px;
+  font-size: 70%;
 }
 
 .form-textarea {
   padding: 10px;
   border: 1px solid rgb(34, 180, 186);
   border-radius: 15px;
+  width: 250px;
+  font-size: 70%;
 }
 
 .msg-status {
@@ -772,7 +794,7 @@ p {
 }
 
 .rodo-info {
-  font-size: 14px;
+  font-size: 10px;
   padding-top: 20px;
 }
 
@@ -797,5 +819,126 @@ p {
   align-items: center;
   flex-direction: column;
   gap: 8px;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media (min-width: 481px) {
+  .form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .form-info__field {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(34, 180, 186);
+    border-radius: 15px;
+    width: 180px;
+    font-size: 85%;
+  }
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid rgb(34, 180, 186);
+    border-radius: 15px;
+    width: 400px;
+    font-size: 85%;
+  }
+  .msg-status {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 24px;
+  }
+  .rodo-info {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .success {
+    display: flex;
+    background-color: greenyellow;
+  }
+  .error {
+    display: flex;
+    background-color: red;
+  }
+  .account {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bank-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) {
+  .form-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .form-info__field {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(34, 180, 186);
+    border-radius: 15px;
+    width: 200px;
+    font-size: 100%;
+  }
+  .form-textarea {
+    padding: 10px;
+    border: 1px solid rgb(34, 180, 186);
+    border-radius: 15px;
+    width: 460px;
+    font-size: 100%;
+  }
+  .msg-status {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 24px;
+  }
+  .rodo-info {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .success {
+    display: flex;
+    background-color: greenyellow;
+  }
+  .error {
+    display: flex;
+    background-color: red;
+  }
+  .account {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bank-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
