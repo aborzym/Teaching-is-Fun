@@ -4,7 +4,7 @@ body {
 }
 
 .title {
-  color: $green;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -20,17 +20,6 @@ h4 {
   font-size: 14px;
   margin: 0.3em;
 }
-@media (min-width: $tablet) {
-  h4 {
-    font-size: 18px;
-    margin: 0.8em;
-  }
-  h2 {
-    font-size: 22px;
-    font-weight: 700;
-    padding-block: 25px;
-  }
-}
 .blue {
   color: $blue;
 }
@@ -41,14 +30,6 @@ h4 {
 
 .fw700 {
   font-weight: 700;
-}
-
-.fs20 {
-  font-size: 20px;
-}
-
-.fs18 {
-  font-size: 18px;
 }
 
 .red {
@@ -69,9 +50,9 @@ h4 {
 .brown {
   color: $brown;
 }
-.wrapper {
-  font-size: 24px;
-}
+// .wrapper {
+//   font-size: 24px;
+// }
 
 .underline {
   text-decoration: underline;
@@ -79,4 +60,25 @@ h4 {
 
 .hand {
   font-family: "Handlee", cursive;
+}
+
+@media (min-width: $tablet) {
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-block: 25px;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0.8em;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .title {
+    font-size: 20px;
+  }
 }

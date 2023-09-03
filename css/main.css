@@ -21,7 +21,7 @@ body {
 }
 
 .title {
-  color: rgb(0, 197, 161);
+  font-size: 16px;
 }
 
 a {
@@ -39,17 +39,6 @@ h4 {
   margin: 0.3em;
 }
 
-@media (min-width: 481px) {
-  h4 {
-    font-size: 18px;
-    margin: 0.8em;
-  }
-  h2 {
-    font-size: 22px;
-    font-weight: 700;
-    padding-block: 25px;
-  }
-}
 .blue {
   color: rgb(16, 31, 206);
 }
@@ -60,14 +49,6 @@ h4 {
 
 .fw700 {
   font-weight: 700;
-}
-
-.fs20 {
-  font-size: 20px;
-}
-
-.fs18 {
-  font-size: 18px;
 }
 
 .red {
@@ -90,10 +71,6 @@ h4 {
   color: rgb(63, 22, 0);
 }
 
-.wrapper {
-  font-size: 24px;
-}
-
 .underline {
   text-decoration: underline;
 }
@@ -102,6 +79,25 @@ h4 {
   font-family: "Handlee", cursive;
 }
 
+@media (min-width: 481px) {
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-block: 25px;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0.8em;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) {
+  .title {
+    font-size: 20px;
+  }
+}
 .btn {
   margin-top: 20px;
   padding: 5px;
@@ -169,7 +165,7 @@ main {
   height: 30px;
   padding-top: 15px;
   padding-inline: 40px;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 30px;
 }
 
@@ -639,6 +635,30 @@ p {
     padding-top: 15px;
     padding-inline: 15%;
     font-size: 18px;
+  }
+}
+.pricelist {
+  font-size: 14px;
+}
+
+.smaller-comment {
+  font-size: 12px;
+}
+
+@media (min-width: 481px) {
+  .pricelist {
+    font-size: 16px;
+  }
+  .smaller-comment {
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) {
+  .pricelist {
+    font-size: 18px;
+  }
+  .smaller-comment {
+    font-size: 14px;
   }
 }
 .gallery {

@@ -1,0 +1,26 @@
+.pricelist {
+  font-size: 14px;
+}
+
+.smaller-comment {
+  font-size: 12px;
+}
+
+@media (min-width: $tablet) {
+  .pricelist {
+    font-size: 16px;
+  }
+
+  .smaller-comment {
+    font-size: 14px;
+  }
+}
+@media (min-width: $desktop) {
+  .pricelist {
+    font-size: 18px;
+  }
+
+  .smaller-comment {
+    font-size: 14px;
+  }
+}
