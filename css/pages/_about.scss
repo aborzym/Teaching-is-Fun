@@ -18,3 +18,14 @@
   border: 1px solid $turquoiseDark;
   border-radius: 20px;
 }
+
+.signature {
+  margin-top: 20px;
+  &__first {
+    padding-left: 60%;
+  }
+  &__second {
+    margin-top: 15px;
+    padding-left: 50%;
+  }
+}

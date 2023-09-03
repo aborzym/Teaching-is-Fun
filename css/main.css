@@ -330,7 +330,7 @@ main {
 }
 @media (min-width: 769px) {
   .footer {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .contact,
@@ -402,6 +402,11 @@ account {
 }
 
 .wrapper {
+  padding-bottom: 30px;
+}
+
+.wrapper-no-title {
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
@@ -495,6 +500,17 @@ p {
   height: auto;
   border: 1px solid rgb(20, 94, 93);
   border-radius: 20px;
+}
+
+.signature {
+  margin-top: 20px;
+}
+.signature__first {
+  padding-left: 60%;
+}
+.signature__second {
+  margin-top: 15px;
+  padding-left: 50%;
 }
 
 .section {
