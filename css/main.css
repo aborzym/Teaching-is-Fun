@@ -405,34 +405,6 @@ main {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 481px) {
-  .ml-10 {
-    margin-left: -10%;
-  }
-  .smaller-comment {
-    padding-bottom: 15px;
-  }
-  .container {
-    margin: auto;
-    background-color: white;
-  }
-  .wrapper {
-    padding-bottom: 30px;
-  }
-  .wrapper-no-title {
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  p {
-    margin-bottom: 10px;
-  }
-  .section {
-    padding-top: 30px;
-  }
-  .dotted-list {
-    padding-bottom: 30px;
-  }
-}
 .ml-10 {
   margin-left: -10%;
 }
@@ -467,6 +439,34 @@ p {
   padding-bottom: 30px;
 }
 
+@media (min-width: 481px) {
+  .ml-10 {
+    margin-left: -10%;
+  }
+  .smaller-comment {
+    padding-bottom: 15px;
+  }
+  .container {
+    margin: auto;
+    background-color: white;
+  }
+  .wrapper {
+    padding-bottom: 30px;
+  }
+  .wrapper-no-title {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .section {
+    padding-top: 30px;
+  }
+  .dotted-list {
+    padding-bottom: 30px;
+  }
+}
 .home {
   position: relative;
   margin: auto;
@@ -576,7 +576,7 @@ p {
 }
 @media (min-width: 769px) {
   .text-block {
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px;
   }
   .profile_photo {
@@ -640,6 +640,9 @@ p {
 @media (min-width: 769px) {
   .offer-list {
     font-size: 14px;
+  }
+  .disc-list {
+    padding-bottom: 10px;
   }
   .levels {
     display: flex;

@@ -38,8 +38,13 @@
 @media (min-width: $desktop) {
   .offer-list {
     //nowe - zmiana z 18
-
     font-size: 14px;
+  }
+
+  //nowe cale
+
+  .disc-list {
+    padding-bottom: 10px;
   }
 
   .levels {
