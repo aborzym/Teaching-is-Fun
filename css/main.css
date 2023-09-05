@@ -99,7 +99,7 @@ h4 {
     padding-block: 25px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0.8em;
   }
   .title {
@@ -341,21 +341,8 @@ main {
   font-size: 10px;
 }
 
-@media (min-width: 481px) {
-  .footer {
-    margin-bottom: 10px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    font-size: 12px;
-  }
-}
-@media (min-width: 769px) {
-  .footer {
-    margin-bottom: 20px;
-  }
-}
 .contact,
-account {
+.account {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -371,11 +358,6 @@ account {
   font-size: 12px;
 }
 
-@media (min-width: 481px) {
-  .contact-list {
-    font-size: 16px;
-  }
-}
 .contact-element {
   display: flex;
   justify-content: center;
@@ -391,11 +373,6 @@ account {
   width: 14px;
 }
 
-@media (min-width: 481px) {
-  .contact-icon {
-    width: 20px;
-  }
-}
 .rodo {
   display: flex;
   justify-content: center;
@@ -409,6 +386,25 @@ account {
   height: 20px;
 }
 
+@media (min-width: 481px) {
+  .footer {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 12px;
+  }
+  .contact-list {
+    font-size: 14px;
+  }
+  .contact-icon {
+    width: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .footer {
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 481px) {
   .ml-10 {
     margin-left: -10%;
