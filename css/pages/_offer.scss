@@ -1,6 +1,7 @@
 .offer-list {
   padding-left: 10%;
   text-align: left;
+
   font-size: 14px;
 }
 
@@ -36,7 +37,9 @@
 }
 @media (min-width: $desktop) {
   .offer-list {
-    font-size: 18px;
+    //nowe - zmiana z 18
+
+    font-size: 14px;
   }
 
   .levels {
@@ -44,6 +47,7 @@
     justify-content: space-between;
     padding-top: 15px;
     padding-inline: 15%;
-    font-size: 18px;
+    //nowe - zmiana z 18
+    font-size: 14px;
   }
 }

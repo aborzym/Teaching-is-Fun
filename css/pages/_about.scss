@@ -47,14 +47,16 @@
 }
 @media (min-width: $desktop) {
   .text-block {
-    font-size: 18px;
+    //nowe - zmiana z 18
+    font-size: 16px;
     padding: 20px;
   }
 
   .profile_photo {
     float: right;
     margin-left: 10px;
-    max-width: 300px;
+    //nowe - zmiana z 300
+    max-width: 200px;
     height: auto;
     margin-bottom: 0;
   }
@@ -69,9 +71,6 @@
       padding-left: 50%;
     }
   }
-}
-
-@media (max-width: $desktop) {
   .photo-container {
     text-align: center;
   }

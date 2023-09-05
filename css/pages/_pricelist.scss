@@ -17,10 +17,14 @@
 }
 @media (min-width: $desktop) {
   .pricelist {
-    font-size: 18px;
+    //nowe - zmiana z 18
+
+    font-size: 14px;
   }
 
   .smaller-comment {
-    font-size: 14px;
+    //nowe - zmiana z 14
+
+    font-size: 10px;
   }
 }
