@@ -1,9 +1,10 @@
 body {
-  font-family: "Handlee", cursive;
+  font-family: "Alkatra", cursive;
   font-family: "Roboto", sans-serif;
 }
 
 .title {
+  padding-top: 10px;
   font-size: 16px;
 }
 a {
@@ -14,6 +15,7 @@ a {
 h2 {
   font-size: 16px;
   font-weight: 700;
+  padding-block: 10px;
   // nowe
   margin: 0;
 }
@@ -61,7 +63,7 @@ h4 {
 }
 
 .hand {
-  font-family: "Handlee", cursive;
+  font-family: "Alkatra", cursive;
 }
 
 @media (min-width: $tablet) {
@@ -82,7 +84,7 @@ h4 {
   h2 {
     //nowe - zmiana z 20
     font-size: 18px;
-    padding-block: 25px;
+    padding-block: 15px;
   }
   h4 {
     //nowe - zmiana z 18
@@ -91,6 +93,7 @@ h4 {
     margin: 0.8em;
   }
   .title {
+    padding-top: 20px;
     font-size: 20px;
   }
 }

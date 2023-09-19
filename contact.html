@@ -74,10 +74,15 @@
     <main>
       <section class="wrapper">
         <h2>Wyślij do mnie wiadomość</h2>
-        <form action="mail.php" method="POST" class="form">
+        <form
+          action="https://formspree.io/f/mjvqeqea"
+          method="POST"
+          class="form"
+        >
           <div class="form-info">
             <input
               type="text"
+              id="name"
               name="name"
               class="form-info__field"
               placeholder="Imię i nazwisko"
@@ -85,6 +90,7 @@
             />
             <input
               type="email"
+              id="email"
               name="email"
               class="form-info__field"
               placeholder="Twój email"
@@ -94,14 +100,15 @@
 
           <textarea
             class="form-textarea"
-            name="msg"
+            name="message"
+            id="message"
             rows="10"
             cols="50"
             placeholder="Twoja wiadomość"
             required
           ></textarea>
 
-          <button class="btn">Wyślij</button>
+          <button class="btn" type="submit">Wyślij</button>
         </form>
 
         <p class="msg-status"></p>

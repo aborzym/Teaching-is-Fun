@@ -25,10 +25,9 @@
     <header>
       <section class="header">
         <div class="header__top">
-          <a class="flag" href="#"><span class="fi fi-pl"></span> </a
-          ><a class="flag" href="./contact_en.html"
-            ><span class="fi fi-gb"></span
-          ></a>
+          <a class="flag" href="./contact.html"
+            ><span class="fi fi-pl"></span> </a
+          ><a class="flag" href="#"><span class="fi fi-gb"></span></a>
         </div>
         <h1 class="logo">Aleksandra Henschke - Teaching is Fun</h1>
         <div class="menu-open-container">
@@ -56,17 +55,17 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="./index.html">Home</a>
+              <a href="./index_en.html">Main</a>
             </li>
             <li class="menu__item">
-              <a class="menu__item" href="./about.html">O Teaching is Fun</a>
+              <a class="menu__item" href="./about_en.html">About me</a>
             </li>
-            <li class="menu__item"><a href="./offer.html">Oferta</a></li>
-            <li class="menu__item"><a href="./pricelist.html">Cennik</a></li>
+            <li class="menu__item"><a href="./offer_en.html">Offer</a></li>
+            <a href="./pricelist_en.html">Pricing</a>
             <li class="menu__item">
-              <a href="./references.html">Moje referencje</a>
+              <a href="./references_en.html">Recommendations</a>
             </li>
-            <li class="current-page"><a href="#">Kontakt</a></li>
+            <li class="current-page"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </section>
@@ -74,10 +73,15 @@
     <main>
       <section class="wrapper">
         <h2>Send me a message</h2>
-        <form action="mail.php" method="POST" class="form">
+        <form
+          action="https://formspree.io/f/mjvqeqea"
+          method="POST"
+          class="form"
+        >
           <div class="form-info">
             <input
               type="text"
+              id="name"
               name="name"
               class="form-info__field"
               placeholder="Your name"
@@ -85,6 +89,7 @@
             />
             <input
               type="email"
+              id="email"
               name="email"
               class="form-info__field"
               placeholder="Your email"
@@ -94,14 +99,15 @@
 
           <textarea
             class="form-textarea"
-            name="msg"
+            name="message"
+            id="message"
             rows="10"
             cols="50"
             placeholder="Your message"
             required
           ></textarea>
 
-          <button class="btn">Send</button>
+          <button class="btn" type="submit">Send</button>
         </form>
 
         <p class="msg-status"></p>

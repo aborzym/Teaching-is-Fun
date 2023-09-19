@@ -57,4 +57,11 @@
 
 .main-home {
   background-color: rgb(245 247 248);
+  flex: none;
+}
+
+@media (min-width: $tablet) {
+  .main-home {
+    flex: 1;
+  }
 }
