@@ -5,6 +5,11 @@
   font-size: 14px;
 }
 
+.single-paragraph {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
 .levels {
   @include displayFlex(column);
   padding-top: 15px;

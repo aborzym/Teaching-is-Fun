@@ -23,6 +23,14 @@ h2 {
 h4 {
   font-size: 14px;
   margin: 0.3em;
+  color: $black;
+}
+
+.link {
+  color: $turquoiseVDark;
+  &:hover {
+    color: $turquoise;
+  }
 }
 .blue {
   color: $blue;
