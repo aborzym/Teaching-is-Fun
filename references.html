@@ -8,6 +8,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- SimpleLightbox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css"
+    />
+
+    <!-- SimpleLightbox JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+      defer
+    ></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
@@ -74,102 +86,90 @@
       <section class="wrapper">
         <h2>Aleksandra Henschke - Teaching is Fun</h2>
         <div class="gallery">
-          <img
-            src="./assets/images/refs/thumbs/ref1-small.jpg"
-            alt="Reference 1"
-            class="thumbnail"
-            onclick="openModal(1)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref2-small.jpg"
-            alt="Reference 2"
-            class="thumbnail"
-            onclick="openModal(2)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref3-small.jpg"
-            alt="Reference 3"
-            class="thumbnail"
-            onclick="openModal(3)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref4-small.jpg"
-            alt="Reference 4"
-            class="thumbnail"
-            onclick="openModal(4)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref5-small.jpg"
-            alt="Reference 5"
-            class="thumbnail"
-            onclick="openModal(5)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref6-small.jpg"
-            alt="Reference 6"
-            class="thumbnail"
-            onclick="openModal(6)"
-          />
-
-          <img
-            src="./assets/images/refs/thumbs/ref7-small.jpg"
-            alt="Reference 7"
-            class="thumbnail"
-            onclick="openModal(7)"
-          />
-
-          <img
-            src="./assets/images/refs/thumbs/ref8-small.jpg"
-            alt="Reference 8"
-            class="thumbnail"
-            onclick="openModal(8)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref9-small.jpg"
-            alt="Reference 9"
-            class="thumbnail"
-            onclick="openModal(9)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref10-small.jpg"
-            alt="Reference 10"
-            class="thumbnail"
-            onclick="openModal(10)"
-          />
-
-          <img
-            src="./assets/images/refs/thumbs/ref11-small.jpg"
-            alt="Reference 11"
-            class="thumbnail"
-            onclick="openModal(11)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref12-small.jpg"
-            alt="Reference 12"
-            class="thumbnail"
-            onclick="openModal(12)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref13-small.jpg"
-            alt="Reference 13"
-            class="thumbnail"
-            onclick="openModal(13)"
-          />
-          <img
-            src="./assets/images/refs/thumbs/ref14-small.jpg"
-            alt="Reference 14"
-            class="thumbnail"
-            onclick="openModal(14)"
-          />
-          <div id="myModal" class="modal">
-            <!-- <span class="close-btn" onclick="closeModal()">&times;</span> -->
+          <a href="./assets/images/refs/ref1.jpg">
             <img
-              src=""
-              alt="Duże Zdjęcie"
-              class="modal-content"
-              id="modalImage"
+              src="./assets/images/refs/thumbs/ref1-small.jpg"
+              alt="Reference 1"
             />
-          </div>
+          </a>
+          <a href="./assets/images/refs/ref2.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref2-small.jpg"
+              alt="Reference 2"
+            />
+          </a>
+          <a href="./assets/images/refs/ref3.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref3-small.jpg"
+              alt="Reference 3"
+            />
+          </a>
+          <a href="./assets/images/refs/ref4.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref4-small.jpg"
+              alt="Reference 4"
+            />
+          </a>
+          <a href="./assets/images/refs/ref5.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref5-small.jpg"
+              alt="Reference 5"
+            />
+          </a>
+          <a href="./assets/images/refs/ref6.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref6-small.jpg"
+              alt="Reference 6"
+            />
+          </a>
+          <a href="./assets/images/refs/ref7.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref7-small.jpg"
+              alt="Reference 7"
+            />
+          </a>
+          <a href="./assets/images/refs/ref8.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref8-small.jpg"
+              alt="Reference 8"
+            />
+          </a>
+          <a href="./assets/images/refs/ref9.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref9-small.jpg"
+              alt="Reference 9"
+            />
+          </a>
+          <a href="./assets/images/refs/ref10.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref10-small.jpg"
+              alt="Reference 10"
+            />
+          </a>
+          <a href="./assets/images/refs/ref11.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref11-small.jpg"
+              alt="Reference 11"
+            />
+          </a>
+          <a href="./assets/images/refs/ref12.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref12-small.jpg"
+              alt="Reference 12"
+            />
+          </a>
+          <a href="./assets/images/refs/ref13.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref13-small.jpg"
+              alt="Reference 13"
+            />
+          </a>
+          <a href="./assets/images/refs/ref14.jpg">
+            <img
+              src="./assets/images/refs/thumbs/ref14-small.jpg"
+              alt="Reference 14"
+            />
+          </a>
         </div>
       </section>
       <section class="second-wrapper">
@@ -284,12 +284,12 @@
         <li class="mobile-menu__item"><a href="./contact.html">Kontakt</a></li>
       </ul>
     </div>
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    ></script> -->
+    <script src="./js/modal.js" type="module" defer></script>
   </body>
 </html>

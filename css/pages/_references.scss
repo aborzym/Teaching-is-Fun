@@ -3,14 +3,16 @@
   gap: 15px;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
-}
 
-.thumbnail {
-  width: 150px;
-  height: auto;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
+  a img {
+    width: 120px; // Domyślna szerokość dla małych ekranów
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -20,37 +22,9 @@
     gap: 30px;
     flex-wrap: wrap;
     padding-inline: 50px;
-    transition: transform 0.3s ease-in-out;
+
+    a img {
+      width: 200px; // Większa szerokość na większych ekranach
+    }
   }
 }
-@media (min-width: $desktop) {
-}
-
-// modal
-.modal {
-  display: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 200%;
-  max-height: 200%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  display: block;
-  margin: auto;
-  max-width: 200%;
-  max-height: 200%;
-}
-
-// .close-btn {
-//   text-align: right;
-//   color: red;
-//   position: absolute;
-//   top: 20px;
-//   right: 100px;
-//   font-size: 30px;
-//   font-weight: bold;
-//   cursor: pointer;
-// }

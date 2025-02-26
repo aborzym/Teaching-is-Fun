@@ -721,13 +721,13 @@ p {
   justify-content: center;
   transition: transform 0.3s ease-in-out;
 }
-
-.thumbnail {
-  width: 150px;
+.gallery a img {
+  width: 120px;
   height: auto;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
-.thumbnail:hover {
+.gallery a img:hover {
   transform: scale(1.1);
 }
 
@@ -740,26 +740,11 @@ p {
     gap: 30px;
     flex-wrap: wrap;
     padding-inline: 50px;
-    transition: transform 0.3s ease-in-out;
+  }
+  .gallery a img {
+    width: 200px;
   }
 }
-.modal {
-  display: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 200%;
-  max-height: 200%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  display: block;
-  margin: auto;
-  max-width: 200%;
-  max-height: 200%;
-}
-
 .modal {
   display: none;
   position: fixed;
