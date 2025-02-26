@@ -19,7 +19,6 @@ body {
   font-family: "Alkatra", cursive;
   font-family: "Roboto", sans-serif;
 }
-
 .title {
   padding-top: 10px;
   font-size: 16px;
@@ -180,7 +179,12 @@ main {
 }
 
 .header {
-  background: linear-gradient(180deg, rgb(70, 160, 158) 0%, rgb(82, 163, 165) 25%, rgb(34, 181, 186) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(70, 160, 158) 0%,
+    rgb(82, 163, 165) 25%,
+    rgb(34, 181, 186) 100%
+  );
 }
 
 @media (min-width: 481px) {
@@ -307,7 +311,12 @@ main {
   height: 50vh;
   padding: 32px;
   border: solid 1px black;
-  background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 25%, rgb(5, 135, 133) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(34, 181, 186) 0%,
+    rgb(82, 163, 165) 25%,
+    rgb(5, 135, 133) 100%
+  );
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -335,7 +344,8 @@ main {
   font-weight: 700;
   margin-bottom: 20px;
 }
-.mobile-menu__item:hover, .mobile-menu__item:focus {
+.mobile-menu__item:hover,
+.mobile-menu__item:focus {
   color: rgb(10, 42, 41);
 }
 
@@ -350,7 +360,12 @@ main {
   margin-top: auto;
   padding: 10px;
   text-align: center;
-  background: linear-gradient(180deg, rgb(34, 181, 186) 0%, rgb(82, 163, 165) 75%, rgb(70, 160, 158) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(34, 181, 186) 0%,
+    rgb(82, 163, 165) 75%,
+    rgb(70, 160, 158) 100%
+  );
   font-size: 10px;
 }
 
@@ -958,4 +973,4 @@ p {
     gap: 8px;
     font-size: 16px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
